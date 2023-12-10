@@ -3,6 +3,7 @@ import logo from '../../../public/logo.png'
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { useState } from "react";
+import './Header.css'
 
 const Header = () => {
     const [navopen, setNavopen] = useState(false);
@@ -11,8 +12,8 @@ const Header = () => {
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'/about'}>About</NavLink></li>
         <li><a>Link</a></li>
-        
-        
+
+
 
     </>
     return (
@@ -27,21 +28,23 @@ const Header = () => {
 
                 <div className="bar text-white text-2xl md:hidden block ml-auto">
                     <button onClick={() => setNavopen(!navopen)}>
-                        
+
                         {
-                            navopen ?  <ImCross /> : <FaBars />
+                            navopen ? <ImCross /> : <FaBars />
                         }
                     </button>
                 </div>
-                <div className="md-nav hidden md:block text-white ml-auto ">
-                    <ul className="menu menu-horizontal text-xl px-1">
-                        {navItem}
-                    </ul>
-                </div>
-                <div className={`${navopen ? 'left-0' : 'left-[140%]'} sm-nav block md:hidden  absolute w-full top-[62px] bg-opacity-80 duration-300 text-white bg-violet-800 `}>
-                    <ul className="menu menu-vertical text-xl px-1">
-                        {navItem}
-                    </ul>
+                <div id="nav">
+                    <div className="nav hidden md:block text-white ml-auto ">
+                        <ul className="menu menu-horizontal text-xl px-1">
+                            {navItem}
+                        </ul>
+                    </div>
+                    <div className={`${navopen ? 'left-0' : 'left-[140%]'} nav block md:hidden  absolute w-full top-[62px] bg-opacity-80 duration-300 text-white bg-violet-800 `}>
+                        <ul className="menu menu-vertical text-xl px-1">
+                            {navItem}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
