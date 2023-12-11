@@ -4,7 +4,7 @@ import './AboutSec.css'
 const AboutSec = () => {
     return (
         <div>
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 py-10 px-3 font-NormalText items-center">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 py-14 px-3 font-NormalText items-center">
                 <div className='py-5 about flex justify-center items-center'>
                     <div className=" flex justify-center items-center relative">
                         <div className='h-[330px] w-[260px] md:h-[380px] img-back md:w-[310px] bg-blue-400 absolute z-0'></div>
