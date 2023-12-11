@@ -1,10 +1,13 @@
+import AboutSec from "../AboutSec/AboutSec";
 import Banner from "../Banner/Banner";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum reprehenderit pariatur corrupti quas magnam. A minima eveniet explicabo itaque, id deleniti illum veniam alias asperiores ducimus non iste, eum aliquam debitis error possimus nihil quae perferendis exercitationem. Similique quibusdam sapiente ipsam totam! Eligendi delectus vero excepturi sint laudantium dolore modi incidunt debitis vel iure! Ea, dolores perspiciatis ipsum reprehenderit inventore, accusantium quia reiciendis voluptates dolore perferendis eos deleniti delectus, quae architecto explicabo? Ab, explicabo. Amet voluptatibus aliquid provident itaque veniam quaerat hic, accusamus expedita sapiente. Cupiditate consequatur itaque repellat et aliquam explicabo commodi id consequuntur doloribus deleniti perferendis illum quos vero voluptas, nihil nesciunt. Quibusdam, excepturi nihil? Ex voluptatibus iure aliquam dignissimos adipisci enim perspiciatis temporibus tenetur necessitatibus, corporis laboriosam sed debitis harum voluptate at quidem rem, nobis modi. Excepturi, sed, eos sequi, magnam itaque repudiandae odit quo accusantium id alias et. Non, reiciendis quidem placeat minus optio quos dignissimos porro illum minima eum iusto! Cum sit debitis recusandae, porro enim assumenda sed beatae ad possimus. Officia harum sed et nam ad deserunt inventore voluptas. Aperiam minima vitae aut deserunt explicabo tempora aliquid unde, fugit laudantium, ut illum voluptatibus at corporis tenetur error itaque eos fuga dolore animi laboriosam maiores provident! Nesciunt quidem ex eius molestiae aliquid, saepe ad ducimus voluptates mollitia expedita, commodi nemo ab quos, possimus quisquam quasi aperiam a sequi ut aut accusantium blanditiis? Veritatis inventore natus rerum magni ad quasi dolore praesentium, non similique molestiae, voluptatem, in nihil qui provident? Odio nostrum vitae necessitatibus dolores perferendis ipsa, incidunt sunt sint iste pariatur asperiores facere praesentium enim animi, modi excepturi consequatur. Aperiam nisi blanditiis commodi! Explicabo perferendis obcaecati ea quasi, nobis, error nihil in dolore possimus reiciendis ut? Explicabo alias repudiandae soluta error magnam, facilis temporibus nesciunt debitis eveniet sed a obcaecati, ea est sunt quibusdam.</p>
+            <AboutSec></AboutSec>
+            <Skills></Skills>
         </div>
     );
 };

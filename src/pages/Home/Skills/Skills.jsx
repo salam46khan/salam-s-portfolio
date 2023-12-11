@@ -1,0 +1,71 @@
+import { FaDatabase, FaFileCode, FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+
+const Skills = () => {
+    return (
+        <div className="bg-base-200 py-10 px-3 font-NormalText">
+            <div className="container mx-auto text-center">
+                <h3 className="border-b-4 border-pink-400 inline-block px-3 font-SectionTitle text-3xl mb-3">
+                    My Skills
+                </h3>
+                <p className="md:w-2/4 mx-auto">
+                    Skill is the seed, practice is the water, and dedication is the sunlight. Nurture your abilities, and watch your potential grow
+                </p>
+            </div>
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 pt-10">
+                <div className="flex flex-col gap-5">
+                    <div className="flex gap-3">
+                        <div className="w-12 flex items-center">
+                            <FaFileCode className="text-5xl mx-auto" />
+                        </div>
+                        <div className="flex-1">
+                            <h4 className="text-xl font-SectionTitle">Web Languages</h4>
+                            <p>
+                                I have expertise in web languages like HTML, CSS, JavaScript
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex gap-3">
+                        <div className="w-12 flex items-center">
+                            <SiTailwindcss className="text-5xl mx-auto" />
+                        </div>
+                        <div className="flex-1">
+                            <h4 className="text-xl font-SectionTitle">CSS Frameworks</h4>
+                            <p>
+                                I have also expertise in CSS frameworks both Tailwind CSS, Bootstrap
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex gap-3">
+                        <div className="w-12 flex items-center">
+                            <FaReact className="text-5xl mx-auto" />
+                        </div>
+                        <div className="flex-1">
+                            <h4 className="text-xl font-SectionTitle">JavaScript Frameworks</h4>
+                            <p>
+                                I am proficient in React.js for building dynamic and responsive user interfaces.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex gap-3">
+                        <div className="w-12 flex items-center">
+                            <FaDatabase className="text-5xl mx-auto" />
+                        </div>
+                        <div className="flex-1">
+                            <h4 className="text-xl font-SectionTitle">Backend Tech & Databases</h4>
+                            <p>
+                                Expertise in backend technologies and databases, including proficiency in Express.js, MongoDB, and Firebase
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    kkkk
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Skills;

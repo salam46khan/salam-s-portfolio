@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Rye&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Rye&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Quintessential&family=Rye&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&family=Quicksand&family=Quintessential&family=Rye&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,13 +11,17 @@
 
 .main-btn{
     position: relative;
-    color: #fff;
+    color: #EC4899;
     padding: 10px 25px;
     transition:all 0.7s;
     z-index: 1;
     border: 1px solid;
     font-size: 18px;
+    font-weight: 700;
     text-transform: uppercase;
+}
+.main-btn:hover{
+    color: white;
 }
 .main-btn::after{
     content: "";

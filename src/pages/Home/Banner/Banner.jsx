@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Banner.css'
 const Banner = () => {
     return (
-        <div className='banner relative py-10 px-3'>
+        <div className='banner relative py-10 px-3 font-NormalText'>
             <div className='h-3/4 flex justify-center items-end'>
                 <div className='text-center text-white'>
                     <div className='bg-blue-500 inline-block p-2 px-9 mb-4 relative'>
@@ -11,7 +11,7 @@ const Banner = () => {
                     </div>
                     <h1 className='lg:text-8xl md:text-6xl text-4xl font-MainTitle'>ABDUS SALAM</h1>
                     <h3 className='font-SubTitle text-3xl text-pink-400 font-bold'>I am a front-end developer</h3>
-                    <p className='text-base-300 text-xl max-w-[450px] mx-auto'>Expert with React, Javascript, Tailwind, MongoDB, Express Js, HTML and CSS</p>
+                    <p className='text-base-300 text-xl max-w-[460px] mx-auto'>Expert with React, Javascript, Tailwind, MongoDB, Express Js, HTML and CSS</p>
                     <div className=' py-5'>
                         <Link className='main-btn' target='_blank' to={'https://drive.google.com/file/d/1ZtWTm2qcHV_wx8v_O1WdW54QRxADEXdj/view?usp=sharing'}>Download Resume</Link>
                     </div>

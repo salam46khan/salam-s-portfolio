@@ -8,7 +8,9 @@ export default {
     extend: {
       fontFamily:{
         MainTitle: ['Rye', 'serif'],
-        SubTitle: ['Quintessential', 'serif']
+        SubTitle: ['Quintessential', 'serif'],
+        NormalText: ['Quicksand','sans-serif'],
+        SectionTitle: ['Lexend', 'sans-serif']
     }
     },
   },
