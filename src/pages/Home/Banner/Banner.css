@@ -1,0 +1,81 @@
+.banner{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#0009,#0009), url(../../../assets/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.wavy{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background:url(../../../assets/svg-4.png);
+    /* background-position: center; */
+    background-repeat: repeat-x;
+    /* background-size: cover; */
+    /* background: #000; */
+    animation: anim 12s linear infinite;
+    opacity: 0.9;
+}
+.wavy::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:url(../../../assets/svg-4.png);
+    /* background-position: center; */
+    background-repeat: repeat-x;
+    /* background-size: cover; */
+    opacity: 0.7;
+    animation: aftr 8s linear infinite;
+    z-index: 0;
+}
+.wavy::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:url(../../../assets/svg-4.png);
+    /* background-position: center; */
+    background-repeat: repeat-x;
+    /* background-size: cover; */
+    opacity: 0.5;
+    animation: befr 6s linear infinite;
+    z-index: 0;
+}
+
+
+@keyframes anim{
+    0%{
+       background-position: 0;
+    }
+    100%{
+        /* background-position: 100%; */
+        background-position: 1440px;
+    }
+}
+@keyframes aftr{
+    0%{
+       background-position: 0;
+    }
+    100%{
+        background-position: 1440px;
+        /* background-position: 100%; */
+    }
+}
+@keyframes befr{
+    0%{
+       background-position: 0px;
+    }
+    100%{
+        /* background-position: 100%; */
+        background-position: 1440px;
+    }
+}

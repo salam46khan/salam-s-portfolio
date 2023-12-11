@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Rye&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.main-btn{
+    position: relative;
+    color: #fff;
+    padding: 10px 25px;
+    transition:all 0.7s;
+    z-index: 1;
+    border: 1px solid;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.main-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #EC4899;
+    z-index: -1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.main-btn:hover::after{
+    width: 100%;
+    opacity: 1; 
+}

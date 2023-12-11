@@ -17,7 +17,7 @@ const Header = () => {
 
     </>
     return (
-        <div className="bg-violet-800  fixed top-0 left-0 w-full ">
+        <div className="bg-violet-800 z-50 fixed top-0 left-0 w-full ">
             <div className="navbar container mx-auto relative flex justify-between items-center">
 
                 <div className="logo">
