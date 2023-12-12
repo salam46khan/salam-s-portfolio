@@ -1,6 +1,7 @@
 import AboutSec from "../AboutSec/AboutSec";
 import Banner from "../Banner/Banner";
 import ContactSec from "../ContactSec/ContactSec";
+import Education from "../Education/Education";
 import Experiance from "../Experiance/Experiance";
 import ProjectSec from "../ProjectSec/ProjectSec";
 import Skills from "../Skills/Skills";
@@ -12,8 +13,9 @@ const Home = () => {
             <AboutSec></AboutSec>
             <Skills></Skills>
             <ProjectSec></ProjectSec>
-            <Experiance></Experiance>
+            <Education></Education>
             <ContactSec></ContactSec>
+            <Experiance></Experiance>
         </div>
     );
 };

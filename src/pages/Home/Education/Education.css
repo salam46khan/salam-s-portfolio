@@ -1,0 +1,7 @@
+.education{
+    background: linear-gradient(50deg, #35404e, #35404e90),url(../../../assets/edu-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

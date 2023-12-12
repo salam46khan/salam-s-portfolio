@@ -1,16 +1,16 @@
-.about-banner{
-    background: linear-gradient(50deg, #35404e, #35404e90),url(../../assets/blog-3.jpeg);
+.contact-banner{
+    background: linear-gradient(50deg, #35404e, #35404e90),url(../../assets/contact.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
 }
-.img-content{
-    min-height: 360px;
-    min-width: 80%;
+.contact-img-content{
+    min-height: 410px;
+    min-width: 90%;
     margin: 0 auto;
-    background: url(../../assets/man-over.png), url(../../assets/blog-3.jpeg);
+    background: url(../../assets/man-over.png), url(../../assets/contact.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

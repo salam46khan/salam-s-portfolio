@@ -10,10 +10,8 @@ const Header = () => {
 
     const navItem = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'/about'}>About</NavLink></li>
-        <li><a>Link</a></li>
-
-
+        <li><NavLink to={'/about'}>About Me</NavLink></li>
+        <li><NavLink to={'/contact'}>Contact Me</NavLink></li>
 
     </>
     return (
