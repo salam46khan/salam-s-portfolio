@@ -19,28 +19,28 @@ const ProjectSec = () => {
                     <div className='text-center py-3'>
                         <p className='font-SectionTitle text-2xl'>Roam Plus</p>
                         <div className='flex justify-between mt-3'>
-                            <Link to={'/'} className='main-btn'>Live Link</Link>
-                            <Link to={'/'} className='main-btn'>Github</Link>
+                            <Link to={'https://roam-plus-70bf9.web.app'} target='_blank' className='main-btn'>Live Link</Link>
+                            <Link to={'https://github.com/salam46khan/roam-plus'} target='_blank' className='main-btn'>Github</Link>
                         </div>
                     </div>
                 </div>
                 <div className="max-w-[310px] border p-2 rounded-md">
-                    <img className='w-full rounded' src={roam} alt="" />
+                    <img className='w-full rounded' src={news} alt="" />
                     <div className='text-center py-3'>
-                        <p className='font-SectionTitle text-2xl'>Roam Plus</p>
+                        <p className='font-SectionTitle text-2xl'>Daily CityScope</p>
                         <div className='flex justify-between mt-3'>
-                            <Link to={'/'} className='main-btn'>Live Link</Link>
-                            <Link to={'/'} className='main-btn'>Github</Link>
+                            <Link to={'https://daily-city-scope.web.app'} target='_blank' className='main-btn'>Live Link</Link>
+                            <Link to={'https://github.com/salam46khan/daily-city-scope'} target='_blank' className='main-btn'>Github</Link>
                         </div>
                     </div>
                 </div>
                 <div className="max-w-[310px] border p-2 rounded-md">
-                    <img className='w-full rounded' src={roam} alt="" />
+                    <img className='w-full rounded' src={car} alt="" />
                     <div className='text-center py-3'>
-                        <p className='font-SectionTitle text-2xl'>Roam Plus</p>
+                        <p className='font-SectionTitle text-2xl'>Auto Majesty</p>
                         <div className='flex justify-between mt-3'>
-                            <Link to={'/'} className='main-btn'>Live link</Link>
-                            <Link to={'/'} className='main-btn'>Github</Link>
+                            <Link to={'https://auto-majesty.web.app'} target='_blank' className='main-btn'>Live link</Link>
+                            <Link to={'https://github.com/salam46khan/auto-majesty'} target='_blank' className='main-btn'>Github</Link>
                         </div>
                     </div>
                 </div>
