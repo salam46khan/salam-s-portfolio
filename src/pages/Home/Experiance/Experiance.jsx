@@ -1,11 +1,13 @@
 import myImg from '../../../assets/IMG20230506140933-01.jpeg'
+import AOS from 'aos';
+AOS.init();
 const Experiance = () => {
     return (
         <div className="bg-base-200 py-12 px-3">
             <div className='container mx-auto'>
                 <div className="bg-base-100 md:mx-28 grid grid-cols-1 lg:grid-cols-2 items-center ">
                     <img src={myImg} alt="" />
-                    <div className='p-5'>
+                    <div className='p-5' data-aos="fade-up">
                         <h3 className="border-b-4 border-pink-400 inline-block pr-6 font-SectionTitle text-3xl mb-3">Experience</h3>
                         <div>
                             <h4 className='font-SectionTitle mt-2 text-xl '>Early Exploration (3 Years Ago)</h4>

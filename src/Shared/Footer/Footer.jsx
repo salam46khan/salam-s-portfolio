@@ -9,11 +9,11 @@ const Footer = () => {
                     <img className='h-20 mx-auto' src={logo} alt="" />
                     <ul className='flex gap-5 -mt-3 justify-center flex-wrap'>
                         <li><Link to={'/about'}>About</Link></li>
-                        <li><Link to={'/service'}>Service</Link></li>
-                        <li><Link to={'/faq'}>FAQ</Link></li>
-                        <li><Link to={'/about'}>Contact</Link></li>
-                        <li><Link to={'/about'}>Contact</Link></li>
-                        <li><Link to={'/about'}>Contact</Link></li>
+                        <li><Link to={'/contact'}>Contact</Link></li>
+                        <li><Link to={'/'}>FAQ</Link></li>
+                        <li><Link to={'/'}>Skill</Link></li>
+                        <li><Link to={'/'}>Experiance</Link></li>
+                        <li><Link to={'/'}>Education</Link></li>
                     </ul>
                     <div className='mt-3'>
                         <h3 className='text-xl font-semibold'>FOLLOW ME</h3>

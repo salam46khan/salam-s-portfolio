@@ -4,10 +4,13 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './Education.css'
 
+import AOS from 'aos';
+AOS.init();
+
 const Education = () => {
     return (
         <div className="py-12 px-3 education font-NormalText">
-            <div className="container mx-auto text-center text-white">
+            <div className="container mx-auto text-center text-white" data-aos="fade-up">
                 <h3 className="border-b-4 border-pink-400 inline-block px-3 font-SectionTitle text-3xl mb-3">
                     Education
                 </h3>

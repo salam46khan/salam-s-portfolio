@@ -1,11 +1,13 @@
 import { FaDatabase, FaFileCode, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import ProgressBar from "@ramonak/react-progress-bar";
+import AOS from 'aos';
+AOS.init();
 
 const Skills = () => {
     return (
         <div className="bg-base-200 py-14 px-3 font-NormalText">
-            <div className="container mx-auto text-center">
+            <div data-aos="fade-up" className="container mx-auto text-center">
                 <h3 className="border-b-4 border-pink-400 inline-block px-3 font-SectionTitle text-3xl mb-3">
                     My Skills
                 </h3>
