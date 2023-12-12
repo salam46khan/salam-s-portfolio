@@ -27,23 +27,23 @@ const Contact = () => {
             });
     };
     return (
-        <div className="border rounded-xl">
-            <form className='card-body bg-base-200' ref={form} onSubmit={sendEmail}>
+        <div className=" ">
+            <form className='card-body bg-base-200 rounded-lg overflow-hidden' ref={form} onSubmit={sendEmail}>
                 <div className='form-control'>
                     <label>Name</label>
-                    <input className="input input-bordered" type="text" name="user_name" />
+                    <input className="input input-bordered" type="text" name="user_name" placeholder='Name' required/>
                 </div>
                 <div className='form-control'>
                     <label>Email</label>
-                    <input className="input input-bordered" type="email" name="user_email" />
+                    <input className="input input-bordered" type="email" name="user_email" placeholder='Email' required/>
                 </div>
                 <div className='form-control'>
                     <label>Message</label>
-                    <textarea className='textarea textarea-bordered' name="message" />
+                    <textarea placeholder='Text...' className='textarea textarea-bordered' name="message" />
                 </div>
 
                 <div className=' flex justify-center mt-2'>
-                    <input className='main-btn  hover:text-black block' type="submit" value="Send" />
+                    <input className='main-btn  hover:text-black' type="submit" value="Send" />
                 </div>
             </form>
         </div>

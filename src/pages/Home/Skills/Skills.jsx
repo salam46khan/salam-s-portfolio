@@ -69,7 +69,7 @@ const Skills = () => {
                         </div>
                         <ProgressBar
                             animateOnRender={true}
-                            bgColor='#00f'
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={90}
                             labelSize='12px'
@@ -83,7 +83,7 @@ const Skills = () => {
                         </div>
                         <ProgressBar
                             animateOnRender={true}
-                            bgColor='#00f'
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={90}
                             labelSize='12px'
@@ -97,7 +97,7 @@ const Skills = () => {
                         </div>
                         <ProgressBar
                             animateOnRender={true}
-                            bgColor='#00f'
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={80}
                             labelSize='12px'
@@ -111,7 +111,7 @@ const Skills = () => {
                         </div>
                         <ProgressBar
                             animateOnRender={true}
-                            bgColor='#00f'
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={90}
                             labelSize='12px'
@@ -125,7 +125,7 @@ const Skills = () => {
                         </div>
                         <ProgressBar
                             animateOnRender={true}
-                            bgColor='#00f'
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={80}
                             labelSize='12px'
@@ -139,7 +139,7 @@ const Skills = () => {
                         </div>
                         <ProgressBar
                             animateOnRender={true}
-                            bgColor='#00f'
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={75}
                             labelSize='12px'
@@ -153,7 +153,7 @@ const Skills = () => {
                         </div>
                         <ProgressBar
                             animateOnRender={true}
-                            bgColor='#00f'
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={65}
                             labelSize='12px'
@@ -167,7 +167,7 @@ const Skills = () => {
                         </div>
                         <ProgressBar
                             animateOnRender={true}
-                            bgColor='#00f'
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={80}
                             labelSize='12px'
