@@ -17,7 +17,7 @@ const ContactSec = () => {
                 <div data-aos="fade-up">
                     <h3 className="border-b-4 border-pink-400 inline-block px-3 font-SectionTitle text-3xl mb-3">Contact Me</h3>
                     <p className="w-full md:w-3/4 mx-auto">
-                        Bringing pixels to life and crafting seamless digital experiences. Let's turn ideas into reality—contact me, and let the front-end journey begin!
+                        Bringing pixels to life and crafting seamless digital experiences. Let&apos;s turn ideas into reality—contact me, and let the front-end journey begin!
                     </p>
                 </div>
             </div>

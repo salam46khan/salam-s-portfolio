@@ -7,7 +7,7 @@ AOS.init();
 const Skills = () => {
     return (
         <div className="bg-base-200 py-14 px-3 font-NormalText">
-            <div data-aos="fade-up" className="container mx-auto text-center">
+            <div data-aos="fade-up" data-aos-duration="1500" className="container mx-auto text-center">
                 <h3 className="border-b-4 border-pink-400 inline-block px-3 font-SectionTitle text-3xl mb-3">
                     My Skills
                 </h3>
@@ -15,7 +15,7 @@ const Skills = () => {
                     Skill is the seed, practice is the water, and dedication is the sunlight. Nurture your abilities, and watch your potential grow
                 </p>
             </div>
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 pt-10 gap-10 items-center">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 pt-10 gap-10 items-center"  data-aos="fade-up" data-aos-duration="2000">
                 <div className="flex flex-col gap-7">
                     <div className="flex gap-3">
                         <div className="w-12 flex items-center">
@@ -172,6 +172,34 @@ const Skills = () => {
                             bgColor='linear-gradient(59deg, #f0f, #55f)'
                             baseBgColor='#fff'
                             completed={80}
+                            labelSize='12px'
+                            height='17px'
+                        />
+                    </div>
+                    <div>
+                        <div className="flex justify-between">
+                            <h2 className="font-SectionTitle">Next JS</h2>
+                            <p>60%</p>
+                        </div>
+                        <ProgressBar
+                            animateOnRender={true}
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
+                            baseBgColor='#fff'
+                            completed={60}
+                            labelSize='12px'
+                            height='17px'
+                        />
+                    </div>
+                    <div>
+                        <div className="flex justify-between">
+                            <h2 className="font-SectionTitle">Mongoose</h2>
+                            <p>50%</p>
+                        </div>
+                        <ProgressBar
+                            animateOnRender={true}
+                            bgColor='linear-gradient(59deg, #f0f, #55f)'
+                            baseBgColor='#fff'
+                            completed={50}
                             labelSize='12px'
                             height='17px'
                         />

@@ -14,10 +14,11 @@ const AboutSec = () => {
                         <img className='h-[330px] w-[260px] md:w-[310px] md:h-auto img-front z-10' src={aboutImg} alt="" />
                     </div>
                 </div>
-                <div className="p-5" data-aos="fade-up">
+                <div className="p-5" data-aos="fade-up" data-aos-duration="1500">
                     <h3 className="border-b-4 border-pink-400 inline-block pr-6 font-SectionTitle text-3xl mb-3">About Me</h3>
+                    <p className='text-2xl font-bold md:w-1/2'>Hey, I&apos;m Abdus Salam, a passionate front-end developer</p>
                     <p>
-                    Hey, I'm Abdus Salam, a passionate front-end developer with expertise in HTML, CSS, and JavaScript. I thrive on creating seamless user experiences, and my toolkit includes technologies like React.js, Tailwind CSS, Firebase, Express.js, and MongoDB.
+                     with expertise in HTML, CSS, and JavaScript. I thrive on creating seamless user experiences, and my toolkit includes technologies like React.js, Tailwind CSS, Firebase, Express.js, and MongoDB.
                     </p>
                     <div className='mt-5'>
                     <Link className='main-btn text-black' to={'/about'}>Read More</Link>

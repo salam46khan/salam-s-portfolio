@@ -69,7 +69,7 @@ const Education = () => {
                         icon={<FaUserGraduate />}
                     >
                         <h3 className=" vertical-timeline-element-title font-SectionTitle text-xl">
-                            Bachelor of Social Science (BSS Hon's)
+                            Bachelor of Social Science (BSS Hon&apos;s)
                         </h3>
 
                         <h4 className=" vertical-timeline-element-subtitle font-thin text-xs">

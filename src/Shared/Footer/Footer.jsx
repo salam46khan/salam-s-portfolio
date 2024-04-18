@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import logo from '../../../public/logo.png'
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const Footer = () => {
     return (
-        <div className="bg-violet-800 py-10 px-3 text-white">
+        <div className="bg-blue-500 py-10 px-3 text-white">
             <div className="container mx-auto flex justify-center items-center py-5">
                 <div className='text-center'>
-                    <img className='h-20 mx-auto' src={logo} alt="" />
+                    <p className='text-3xl font-bold mb-5 uppercase'>Salam</p>
                     <ul className='flex gap-5 -mt-3 justify-center flex-wrap'>
                         <li><Link to={'/about'}>About</Link></li>
                         <li><Link to={'/contact'}>Contact</Link></li>
@@ -42,7 +41,7 @@ const Footer = () => {
 
             </div>
             <hr />
-            <p className='text-center mt-2'>Copyright 2023-2024 salam46.com</p>
+            <p className='text-center mt-2'>Copyright 2023-2024 salam.com</p>
         </div>
     );
 };
