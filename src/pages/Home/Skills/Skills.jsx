@@ -1,10 +1,12 @@
 import { FaDatabase, FaFileCode, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import ProgressBar from "@ramonak/react-progress-bar";
+// import ProgressBar from "@ramonak/react-progress-bar";
 import AOS from 'aos';
+import useSkills from "../../../hooks/useSkills";
 AOS.init();
 
 const Skills = () => {
+    const [skill] = useSkills()
     return (
         <div className="bg-base-200 py-14 px-3 font-NormalText">
             <div data-aos="fade-up" data-aos-duration="1500" className="container mx-auto text-center">
@@ -15,7 +17,7 @@ const Skills = () => {
                     Skill is the seed, practice is the water, and dedication is the sunlight. Nurture your abilities, and watch your potential grow
                 </p>
             </div>
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 pt-10 gap-10 items-center"  data-aos="fade-up" data-aos-duration="2000">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 pt-10 gap-10 items-center" data-aos="fade-up" data-aos-duration="2000">
                 <div className="flex flex-col gap-7">
                     <div className="flex gap-3">
                         <div className="w-12 flex items-center">
@@ -63,7 +65,7 @@ const Skills = () => {
                     </div>
 
                 </div>
-                <div className="flex flex-col gap-2">
+                {/* <div className="flex flex-col gap-2">
                     <div className="">
                         <div className="flex justify-between">
                             <h2 className="font-SectionTitle">HTML</h2>
@@ -204,6 +206,20 @@ const Skills = () => {
                             height='17px'
                         />
                     </div>
+                </div> */}
+
+                <div className="flex flex-wrap gap-2 justify-center">
+                    {
+                        skill?.map(skill => (
+                            <div key={skill?._id} className="w-full max-w-[165px] border p-2 pt-4 rounded hover:bg-white/40 duration-150 bg-white/25 shadow-md shadow-black/40">
+                                <img className="h-[40px] mx-auto" src={skill?.photo} alt="" />
+                                <p className="text-xl text-center font-bold text-pink-400 mt-2">{skill?.skill_name}</p>
+                            </div>
+                        ))
+                    }
+
+
+
                 </div>
             </div>
         </div>

@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import roam from '../../../assets/1.png'
-import news from '../../../assets/2.png'
-import car from '../../../assets/3.png'
 
 import AOS from 'aos';
+import useProjects from '../../../hooks/useProjects';
+import ProjectItem from './ProjectItem';
 AOS.init();
 const ProjectSec = () => {
+    const [project] = useProjects()
     return (
         <div className="py-12 px-3 font-NormalText">
             <div className="container mx-auto flex justify-center text-center mb-3">
@@ -16,67 +15,10 @@ const ProjectSec = () => {
                     </p>
                 </div>
             </div>
-            <div  data-aos="fade-up" data-aos-duration="2000" className="container mx-auto flex flex-wrap justify-center gap-5">
-                <div className="max-w-[310px] border p-2 rounded-md">
-                    <img className='w-full rounded' src={roam} alt="" />
-                    <div className='text-center py-3'>
-                        <p className='font-SectionTitle text-2xl'>Roam Plus</p>
-                        <div className='flex justify-between mt-3'>
-                            <Link to={'https://roam-plus-70bf9.web.app'} target='_blank' className='main-btn'>Live Link</Link>
-                            <Link to={'https://github.com/salam46khan/roam-plus'} target='_blank' className='main-btn'>Github</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="max-w-[310px] border p-2 rounded-md">
-                    <img className='w-full rounded' src={news} alt="" />
-                    <div className='text-center py-3'>
-                        <p className='font-SectionTitle text-2xl'>Daily CityScope</p>
-                        <div className='flex justify-between mt-3'>
-                            <Link to={'https://daily-city-scope.web.app'} target='_blank' className='main-btn'>Live Link</Link>
-                            <Link to={'https://github.com/salam46khan/daily-city-scope'} target='_blank' className='main-btn'>Github</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="max-w-[310px] border p-2 rounded-md">
-                    <img className='w-full rounded' src={car} alt="" />
-                    <div className='text-center py-3'>
-                        <p className='font-SectionTitle text-2xl'>Auto Majesty</p>
-                        <div className='flex justify-between mt-3'>
-                            <Link to={'https://auto-majesty.web.app'} target='_blank' className='main-btn'>Live link</Link>
-                            <Link to={'https://github.com/salam46khan/auto-majesty'} target='_blank' className='main-btn'>Github</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="max-w-[310px] border p-2 rounded-md">
-                    <img className='w-full rounded' src={car} alt="" />
-                    <div className='text-center py-3'>
-                        <p className='font-SectionTitle text-2xl'>Auto Majesty</p>
-                        <div className='flex justify-between mt-3'>
-                            <Link to={'https://auto-majesty.web.app'} target='_blank' className='main-btn'>Live link</Link>
-                            <Link to={'https://github.com/salam46khan/auto-majesty'} target='_blank' className='main-btn'>Github</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="max-w-[310px] border p-2 rounded-md">
-                    <img className='w-full rounded' src={car} alt="" />
-                    <div className='text-center py-3'>
-                        <p className='font-SectionTitle text-2xl'>Auto Majesty</p>
-                        <div className='flex justify-between mt-3'>
-                            <Link to={'https://auto-majesty.web.app'} target='_blank' className='main-btn'>Live link</Link>
-                            <Link to={'https://github.com/salam46khan/auto-majesty'} target='_blank' className='main-btn'>Github</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="max-w-[310px] border p-2 rounded-md">
-                    <img className='w-full rounded' src={car} alt="" />
-                    <div className='text-center py-3'>
-                        <p className='font-SectionTitle text-2xl'>Auto Majesty</p>
-                        <div className='flex justify-between mt-3'>
-                            <Link to={'https://auto-majesty.web.app'} target='_blank' className='main-btn'>Live link</Link>
-                            <Link to={'https://github.com/salam46khan/auto-majesty'} target='_blank' className='main-btn'>Github</Link>
-                        </div>
-                    </div>
-                </div>
+            <div data-aos="fade-up" data-aos-duration="2000" className="container mx-auto flex flex-wrap justify-center gap-5">
+                {
+                    project?.map(project => <ProjectItem key={project._id} project={project}></ProjectItem>)
+                }
             </div>
         </div>
     );
