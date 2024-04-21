@@ -5,7 +5,10 @@ const Footer = () => {
         <div className="bg-blue-500 py-10 px-3 text-white">
             <div className="container mx-auto flex justify-center items-center py-5">
                 <div className='text-center'>
-                    <p className='text-3xl font-bold mb-5 uppercase'>Salam</p>
+                    <div className='mb-7'>
+                        <p className='text-3xl overflow-hidden font-bold inline-block border-4 border-white'>SALAM&apos;S<span className='bg-white py-3 text-blue-400'>PORTFOLIO</span></p>
+                    </div>
+
                     <ul className='flex gap-5 -mt-3 justify-center flex-wrap'>
                         <li><Link to={'/about'}>About</Link></li>
                         <li><Link to={'/contact'}>Contact</Link></li>

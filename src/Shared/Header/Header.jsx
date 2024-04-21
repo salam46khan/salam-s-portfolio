@@ -13,7 +13,7 @@ const Header = () => {
     const [identity] = useIdentity()
     const isAdmin = identity[0]?.isAdmin;
     const [navopen, setNavopen] = useState(false);
-    const { user,logOut } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
 
     const handleLogout = () => {
         logOut()
@@ -23,7 +23,7 @@ const Header = () => {
         <li><NavLink to={'/about'}>About Me</NavLink></li>
         <li><NavLink to={'/contact'}>Contact Me</NavLink></li>
         {
-            isAdmin ?  <li><NavLink to={'/update'}>Update data</NavLink></li> : ''
+            isAdmin ? <li><NavLink to={'/update'}>Update data</NavLink></li> : ''
         }
     </>
     return (
@@ -32,7 +32,7 @@ const Header = () => {
 
                 <div className="logo">
                     <Link to={'/'}>
-                        <p className="font-bold text-white">Salam</p>
+                        <p className='text-lg overflow-hidden text-white no-underline font-bold inline-block border-4 border-white'>SALAM&apos;S<span className='bg-white py-2 text-blue-400'>PORTFOLIO</span></p>
                     </Link>
                 </div>
 

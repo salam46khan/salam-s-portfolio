@@ -1,6 +1,5 @@
 import { FaLink } from "react-icons/fa";
-import useIdentity from "../../hooks/useIdentity";
-import useProjects from "../../hooks/useProjects";
+
 import useResume from "../../hooks/useResume";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
@@ -8,13 +7,13 @@ import MyProjectTable from "./MyProjectTable";
 import AddSkills from "./AddSkills";
 
 const Update = () => {
-    const [project] = useProjects()
-    const [identity] = useIdentity();
+    // const [project] = useProjects()
+    // const [identity] = useIdentity();
     const [resume,  refetch] = useResume()
     const axiosPublic = useAxiosPublic()
-    console.log(resume);
-    console.log(identity);
-    console.log(project);
+    // console.log(resume);
+    // console.log(identity);
+    // console.log(project);
 
     const handleUpdatResume = event => {
         event.preventDefault()

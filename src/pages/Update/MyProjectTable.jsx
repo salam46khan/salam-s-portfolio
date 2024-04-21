@@ -165,7 +165,7 @@ const MyProjectTable = () => {
                                 </div>
 
                                 <div>
-                                    <input className="bg-blue-400 py-2 w-full text-white px-8 rounded-full font-bold cursor-pointer" type="submit" value="Login" />
+                                    <input className="bg-blue-400 py-2 w-full text-white px-8 rounded-full font-bold cursor-pointer" type="submit" value="Add Project" />
                                 </div>
                             </form>
                         </div>
