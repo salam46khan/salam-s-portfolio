@@ -15,7 +15,7 @@ const ProjectSec = () => {
                     </p>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="2000" className="container mx-auto flex flex-wrap justify-center gap-5">
+            <div data-aos="fade-up" data-aos-duration="2000" className="container mx-auto flex flex-wrap justify-center gap-5 mt-8">
                 {
                     project?.map(project => <ProjectItem key={project._id} project={project}></ProjectItem>)
                 }

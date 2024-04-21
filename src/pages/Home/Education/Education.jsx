@@ -10,7 +10,7 @@ AOS.init();
 const Education = () => {
     return (
         <div className="py-12 px-3 education font-NormalText">
-            <div className="container mx-auto text-center text-white" data-aos="fade-up">
+            <div className="container mx-auto text-center text-white" data-aos="fade-up" data-aos-duration="1500">
                 <h3 className="border-b-4 border-pink-400 inline-block px-3 font-SectionTitle text-3xl mb-3">
                     Education
                 </h3>
